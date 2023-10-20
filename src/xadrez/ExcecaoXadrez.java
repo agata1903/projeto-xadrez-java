@@ -1,6 +1,6 @@
 package xadrez;
 
-import tabuleiro.ExcecaoTabuleiro;
+import jogotabuleiro.ExcecaoTabuleiro;
 
 public class ExcecaoXadrez extends ExcecaoTabuleiro{
 

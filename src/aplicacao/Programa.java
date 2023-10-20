@@ -3,9 +3,9 @@ package aplicacao;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import tabuleiro.ExcecaoTabuleiro;
-import tabuleiro.Posicao;
-import tabuleiro.Tabuleiro;
+import jogotabuleiro.ExcecaoTabuleiro;
+import jogotabuleiro.Posicao;
+import jogotabuleiro.Tabuleiro;
 import xadrez.PartidaXadrez;
 import xadrez.PecaXadrez;
 import xadrez.PosicaoXadrez;

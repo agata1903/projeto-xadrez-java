@@ -1,8 +1,8 @@
 package xadrez;
 
-import tabuleiro.Peca;
-import tabuleiro.Posicao;
-import tabuleiro.Tabuleiro;
+import jogotabuleiro.Peca;
+import jogotabuleiro.Posicao;
+import jogotabuleiro.Tabuleiro;
 import xadrez.pecas.Rei;
 import xadrez.pecas.Torre;
 
@@ -42,6 +42,9 @@ public class PartidaXadrez {
 	private void validarPosicaoOrigem(Posicao posicao) {
 		if(!tabuleiro.temPeca(posicao)) {
 			throw new ExcecaoXadrez("Não há peça na posição de origem!");
+		}
+		if(!tabuleiro.peca(posicao).haMovimentoPossivel()) {
+			throw new ExcecaoXadrez("Não existe movimentos possíveis para essa peça");
 		}
 	}
 	private void colocarNovaPeca(char coluna, int linha, PecaXadrez peca) {
