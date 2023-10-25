@@ -56,9 +56,15 @@ public class IU {
 		System.out.println();
 		imprimePecasCapturadas(capturadas);
 		System.out.println("Turno " + partida.getTurno() + ":");
-		System.out.println("Aguardando jogador: " + partida.getJogadorAtual());
-		if(partida.getXeque()) {
-			System.out.println("XEQUE!");
+		if(!partida.getXequeMate()) {
+			System.out.println("Aguardando jogador: " + partida.getJogadorAtual());
+			if(partida.getXeque()) {
+				System.out.println("XEQUE!");
+			}
+		}
+		else {
+			System.out.println("Xeque Mate!");
+			System.out.println("Vencedor: " + partida.getJogadorAtual());
 		}
 	}
 	public static void imprimeTabuleiro(PecaXadrez[][] pecas) {
