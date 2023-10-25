@@ -17,7 +17,7 @@ public class Rainha extends PecaXadrez{
 	}
 	@Override
 	public boolean[][] movimentosPossiveis() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
