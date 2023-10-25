@@ -11,7 +11,7 @@ import xadrez.PartidaXadrez;
 import xadrez.PecaXadrez;
 import xadrez.PosicaoXadrez;
 
-public class UI {
+public class IU {
 
 	// https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
 
@@ -57,6 +57,9 @@ public class UI {
 		imprimePecasCapturadas(capturadas);
 		System.out.println("Turno " + partida.getTurno() + ":");
 		System.out.println("Aguardando jogador: " + partida.getJogadorAtual());
+		if(partida.getXeque()) {
+			System.out.println("XEQUE!");
+		}
 	}
 	public static void imprimeTabuleiro(PecaXadrez[][] pecas) {
 

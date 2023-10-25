@@ -20,18 +20,18 @@ public class Programa {
 		
 		while(true) {
 			try {
-				UI.clearScreen();
-				UI.imprimePartida(partida, capturadas);
+				IU.clearScreen();
+				IU.imprimePartida(partida, capturadas);
 				System.out.println();
 				System.out.println("Origem: ");
-				PosicaoXadrez origem = UI.lerPosicaoXadrez(sc);
+				PosicaoXadrez origem = IU.lerPosicaoXadrez(sc);
 				
 				boolean[][] movimentosPossiveis = partida.movimentosPossiveis(origem);
-				UI.clearScreen();
-				UI.imprimeTabuleiro(partida.getPecas(), movimentosPossiveis);
+				IU.clearScreen();
+				IU.imprimeTabuleiro(partida.getPecas(), movimentosPossiveis);
 				System.out.println();
 				System.out.println("Destino: ");
-				PosicaoXadrez destino = UI.lerPosicaoXadrez(sc);
+				PosicaoXadrez destino = IU.lerPosicaoXadrez(sc);
 				
 				PecaXadrez pecasCapturadas = partida.movimentoXadrez(origem, destino);
 				
