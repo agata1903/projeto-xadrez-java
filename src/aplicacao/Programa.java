@@ -38,6 +38,12 @@ public class Programa {
 				if(pecasCapturadas != null) {
 					capturadas.add(pecasCapturadas);
 				}
+				
+				if(partida.getPromovido() != null) {
+					System.out.println("Insira peça a promover: ");
+					String type = sc.nextLine();
+					partida.substPecaPromovida(type);
+				}
 			}
 			catch(ExcecaoTabuleiro e) {
 				System.out.println(e.getMessage());

@@ -94,7 +94,7 @@ public class Rainha extends PecaXadrez {
 		}
 
 		// sudoeste
-		p.setValores(posicao.getLinha() + 1, posicao.getColuna() + 1);
+		p.setValores(posicao.getLinha() + 1, posicao.getColuna() - 1);
 		while (getTabuleiro().existePosicao(p) && !getTabuleiro().temPeca(p)) {
 			mat[p.getLinha()][p.getColuna()] = true;
 			p.setValores(p.getLinha() + 1, p.getColuna() - 1);
